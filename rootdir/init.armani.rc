@@ -319,6 +319,14 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
+	
+on property:init.svc.qcamerasvr=running
+    stop cameraserver
+    start cameraserver
+	
+on property:vold.decrypt=trigger_restart_framework
+    stop camera-provider-2-4
+    start camera-provider-2-4
 
 service time_daemon /vendor/bin/time_daemon
     class late_start
