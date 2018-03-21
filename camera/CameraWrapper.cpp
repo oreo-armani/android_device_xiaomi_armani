@@ -342,7 +342,7 @@ static int camera_store_meta_data_in_buffers(struct camera_device *device,
     ALOGV("%s->%08X->%08X", __FUNCTION__, (uintptr_t)device,
             (uintptr_t)(((wrapper_camera_device_t*)device)->vendor));
 
-    return VENDOR_CALL(device, store_meta_data_in_buffers, enable);
+    return OK;
 }
 
 static int camera_start_recording(struct camera_device *device)
