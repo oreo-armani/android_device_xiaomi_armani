@@ -25,6 +25,7 @@ ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 camera2.portability.force_api=1
+debug.camcorder.disablemeta=true
 
 # Qualcomm® aptX™
 persist.bt.enableAptXHD=true
