@@ -396,7 +396,7 @@ static void camera_release_recording_frame(struct camera_device *device,
 
 static int camera_auto_focus(struct camera_device *device)
 {
-	ALOGV("%s: camera_device %p", __FUNCTION__, device)
+	ALOGV("%s: camera_device %p", __FUNCTION__, device);
     if (!device)
         return -EINVAL;
 
